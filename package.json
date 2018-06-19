@@ -1,8 +1,12 @@
 {
   "name": "",
   "version": "",
+  "scripts": {
+    "start": "node server.js"
+  },
   "dependencies": {
     "express": "^4.16.3",
-    "hbs": "^4.0.1"
+    "hbs": "^4.0.1",
+    "heroku": "^7.0.100"
   }
 }

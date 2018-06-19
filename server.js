@@ -1,8 +1,12 @@
 const express = require('express');
-const app = express();
-
 //hbs is handlebars which is helpful in creating template driven page
 const hbs = require('hbs');
+const port = process.env.PORT || 3000;
+const app = express();
+
+
+
+
 //registering partial means when we take out the common code from html file like footer and title
 //and keep it in different files for that we have to register partials
 hbs.registerPartials(__dirname+'/views/partials')
@@ -24,4 +28,4 @@ app.get('/about', (req, res) => {
         title:'This is about page through Templating'
     })
 })
-app.listen(3000);
+app.listen(port);
